@@ -1,0 +1,39 @@
+Part 1: Identify Classes 
+1. Book 
+    Represents a book in the library. 
+    Stores details like title, author, ISBN, and availability. 
+2. Member 
+    Represents a library member. 
+    Tracks books borrowed by the member and borrowing limits. 
+3. Librarian 
+    Manages book collection. 
+    Handles adding and removing books from the system. 
+4. LibraryCatalog 
+    Maintains a collection of books. 
+    Provides searching and listing functionalities. 
+
+Part 2: Define Responsibilities 
+1. Book 
+    Store and manage book details. 
+    Update availability status when borrowed or returned. 
+2. Member 
+    Borrow books (up to 3 at a time) if available. 
+    Return books to make them available for others. 
+3. Librarian 
+    Add new books to the catalog. 
+    Remove outdated or lost books. 
+4. LibraryCatalog 
+    Store and retrieve book records. 
+    List available books and books checked out. 
+
+
+Part 3: Identify Collaborators 
+1. Book <> Member 
+    A member borrows or returns a book, affecting its availability status. 
+2. Member <> LibraryCatalog 
+    A member searches for books in the catalog before borrowing. 
+3. Librarian <> LibraryCatalog 
+    A librarian manages book records within the catalog. 
+4. LibraryCatalog <> Book 
+    The catalog maintains a collection of books and updates 
+    their statuses accordingly.
